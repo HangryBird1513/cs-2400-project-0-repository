@@ -15,8 +15,8 @@ public class NumberGuess
         Scanner input = new Scanner(System.in);
 
         // Variables
-        int min = 1;
-        int max = 5;
+        int min = 10;
+        int max = 50;
         int range = max - min + 1;
         int randomNum = (int)(Math.random() * range) + min;
         int guessedNum = -1;
@@ -53,7 +53,7 @@ public class NumberGuess
                 }
                 else
                 {
-                    System.out.println("Yes, that's the number I was thinking of! It took you " + guesses + " guess(es) to guess it correctly!");
+                    System.out.println("Congrats, that's the number I was thinking of! It took you " + guesses + " guess(es) to guess it correctly!");
                 }
             }
         }
